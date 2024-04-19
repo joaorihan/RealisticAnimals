@@ -1,0 +1,10 @@
+version: 0.2.0
+
+# Displayed item when a player opens a Friendship GUI for the friendship meter
+# Full list of possible items: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+friendship-gui-item: REDSTONE_BLOCK
+
+# List of animals the plugin will treat as interactable.
+# Full list of possible types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+# Some might not work as intended.
+enabled-animals: [COW, SHEEP, PIG, CHICKEN, RABBIT, MUSHROOM_COW]
