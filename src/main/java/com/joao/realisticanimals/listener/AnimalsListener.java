@@ -57,7 +57,7 @@ public class AnimalsListener implements Listener {
     public void onFriendshipIncrease(FriendshipIncreaseEvent e){
         Player player = e.getPlayer();
         Entity animal = e.getAnimal();
-        player.sendMessage(ChatColor.GREEN + "Seu nível de amizade com " + animal.getName() + " aumentou para " + e.getFriendship());
+        player.sendMessage(ChatColor.GRAY + "Seu nível de " + ChatColor.RED + "amizade" + ChatColor.GRAY+" com " + ChatColor.YELLOW + animal.getName() + ChatColor.GRAY+" aumentou para " + ChatColor.RED + e.getFriendship());
     }
 
     @EventHandler

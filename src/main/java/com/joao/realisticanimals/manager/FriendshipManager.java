@@ -13,7 +13,7 @@ import java.util.UUID;
 
 public class FriendshipManager {
 
-    private RealisticAnimals plugin = RealisticAnimals.getInstance();
+    private final RealisticAnimals plugin = RealisticAnimals.getInstance();
 
     private UUID playerUUID;
     private UUID animalUUID;
@@ -56,7 +56,7 @@ public class FriendshipManager {
 
 
     public void decreaseFriendship(){
-
+        // todo: implement LastInteraction in database
     }
 
 

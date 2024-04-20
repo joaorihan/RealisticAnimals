@@ -26,7 +26,6 @@ public final class RealisticAnimals extends JavaPlugin {
         MainConfig.loadConfig();
 
         database = new Database();
-
         try {
             database.connect();
         } catch (SQLException e) {
@@ -43,7 +42,6 @@ public final class RealisticAnimals extends JavaPlugin {
     public void onDisable() {
         Config.getMainConfig().saveConfigs();
         database.disconnect();
-
 
         plugin = null;
     }
