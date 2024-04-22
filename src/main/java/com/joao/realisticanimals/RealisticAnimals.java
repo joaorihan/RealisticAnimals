@@ -4,6 +4,7 @@ import com.joao.realisticanimals.config.Config;
 import com.joao.realisticanimals.config.MainConfig;
 import com.joao.realisticanimals.database.Database;
 import com.joao.realisticanimals.listener.AnimalsListener;
+import com.joao.realisticanimals.listener.BreedingListener;
 import com.joao.realisticanimals.listener.GuiListener;
 import com.joao.realisticanimals.manager.FriendshipManager;
 import org.bukkit.Bukkit;
@@ -34,6 +35,7 @@ public final class RealisticAnimals extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new AnimalsListener(), plugin);
         Bukkit.getPluginManager().registerEvents(new GuiListener(), plugin);
+        Bukkit.getPluginManager().registerEvents(new BreedingListener(), plugin);
 
         friendshipManager = new FriendshipManager();
     }
