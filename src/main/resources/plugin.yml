@@ -4,3 +4,5 @@ main: com.joao.realisticanimals.RealisticAnimals
 api-version: '1.20'
 authors: [Super]
 description: Making animals feel more realistic. Heavily inspired in Stardew Valley
+commands:
+  debug:

@@ -80,4 +80,17 @@ public class FriendshipManager {
         return friendship;
     }
 
+    public boolean canDropItems(Entity animal) throws SQLException {
+        PreparedStatement select = plugin.getDatabase().getConnection().prepareStatement("SELECT FRIENDSHIP FROM friendships WHERE ANIMAL_UUID = ?;");
+        select.setString(1, animal.getUniqueId().toString());
+        ResultSet rs = select.executeQuery();
+
+        while (rs.next()){
+            friendship = rs.getInt("FRIENDSHIP");
+            if (friendship > 6) return true;
+        }
+        return false;
+    }
+
+
 }
